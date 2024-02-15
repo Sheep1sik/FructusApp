@@ -13,6 +13,7 @@ struct StartButtonView: View {
     @AppStorage("isOnboarding") var isOnboarding: Bool?
     
     // MARK: - BODY
+    
     var body: some View {
         Button(action: {
             isOnboarding = false
@@ -22,7 +23,7 @@ struct StartButtonView: View {
                 
                 Image(systemName: "arrow.right.circle")
                     .imageScale(.large)
-            } //: HSTACK
+            }
             .padding(.horizontal, 16)
             .padding(.vertical, 10)
             .background(
@@ -32,6 +33,7 @@ struct StartButtonView: View {
         .accentColor(Color.white)
     }
 }
+
 
 // MARK: - PREVIEWS
 struct StartButtonView_Previews: PreviewProvider {

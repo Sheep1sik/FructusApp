@@ -15,15 +15,15 @@ struct OnboardingView: View {
     // MARK: - BODY
     
     var body: some View {
-        TabView{
-            ForEach(fruits[0..<5]) { item in
-                FruitCardView(fruit: item)
-            } //: LOOP
-        } //: TAB
-        .tabViewStyle(PageTabViewStyle())
-        .padding(.vertical, 20)
+      TabView {
+        ForEach(fruits[0...5]) { item in
+          FruitCardView(fruit: item)
+        } //: LOOP
+      } //: TAB
+      .tabViewStyle(PageTabViewStyle())
+      .padding(.vertical, 20)
     }
-}
+  }
 // MARK: - PREVIEWS
 
 struct OnboardingView_Previews: PreviewProvider {
